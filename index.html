@@ -12,19 +12,64 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Chatting App</title>
+    <link rel = "icon" href = "Logo.png" type = "image/x-icon">
 </head>
 <body>
+    <header class="main">
+        <div class="image-text">
+            <span class="image">
+                <img src="Logo.png" alt="logo">
+            </span>
+            <div class="text header-text">
+                <span class="name">Talk 'n Draw</span>
+                <h3 class="developer">By Nilesh Somani, Vishal Joshi</h3>
+            </div>
+        </div>
+    </header>
+    <nav class="sidebar-main close">
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="chat active">
+                    <a href="index.html">
+                        <i class='bx bx-chat icon'></i>
+                    </a>
+                </li>
+                <li class="call">
+                    <a href="">
+                        <i class="bx bx-phone icon"></i>
+                    </a>
+                </li>
+                <li class="status">
+                    <a href="">
+                        <i class="icon color"><img src="status.png" width="45%"></i>
+                    </a>
+                </li>
+            </div>
+            <div class="bottom-content">
+                <li class="setting">
+                    <a href="">
+                        <i class='bx bx-cog icon' ></i>
+                    </a>
+                </li>
+                <li class="logout">
+                    <a href="">
+                        <i class='bx bx-log-out-circle icon'></i>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="toggle-switch">
+                        <span class="switch">
+                            <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                        </span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
     <nav class="sidebar close">
         <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="Logo.png" alt="logo">
-                </span>
-                <div class="text header-text">
-                    <span class="name">Talk 'n Draw</span>
-                    <span class="developer">By Nilesh Somani</span>
-                </div>
-            </div>
+            
             <i class="bx bx-chevron-right toggle"></i>
         </header>
         <div class="menu-bar">
@@ -39,35 +84,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="bottom-content">
-                <li class="setting">
-                    <a href="">
-                        <i class='bx bx-cog icon' ></i>
-                        <span class="text nav-text">Setting</span>
-                    </a>
-                </li>
-                <li class="logout">
-                    <a href="">
-                        <i class="bx bx-log-out icon"></i>
-                        <span class="text nav-text">Logout</span>
-                    </a>
-                </li>
-                <li class="mode">
-                    
-                    <div class="toggle-switch">
-                        <span class="switch">
-                            <i class="bx bx-moon icon moon"></i>
-                        <i class="bx bx-sun icon sun"></i>
-                        </span>
-                    </div>
-                    <span class="mode-text text">Dark Mode</span>
-                    
-                </li>
-            </div>
         </div>
     </nav>
     <section class="home">
-        <div class="text">Dashboard</div>
+        <div class="text">
+            
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
