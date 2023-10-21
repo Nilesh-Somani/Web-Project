@@ -376,7 +376,7 @@ body.dark .sidebar li a:hover .text {
     top: 50px;
     left: 258px;
     height: 100vh;
-    width: calc(100%);
+    width: 100%;
     transition: var(--tran-05);
     border: 2px solid var(--border-color);
 }
