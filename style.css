@@ -40,13 +40,13 @@ body {
 }
 
 body.dark {
-    --body-color: #202020;
+    --body-color: #020303;
     --sidebar-color: #242526;
     --primary-color: #3A3B3C;
     --primary-color-light: #3A3B3C;
     --toggle-color: #ccc;
     --text-color: #fff;
-    --selection-color: #d3d3d3;
+    --selection-color: #424242;
     --border-color: #1c1c1c;
 }
 
@@ -127,7 +127,7 @@ li .color {
       brightness(86%) contrast(83%);
 }
 
-body.dark li .color {
+body.dark .color {
     filter: invert(90%) sepia(0%)
      saturate(7460%) hue-rotate(125deg)
       brightness(115%) contrast(112%);
@@ -227,6 +227,22 @@ body.dark .sidebar-main .menu-bar .mode i.moon {
     transition: var(--tran-03);
 }
 
+.sidebar-main .text {
+    color: var(--text-color);
+    opacity: 0;
+}
+
+.sidebar-main a:hover .text {
+    padding: 2px;
+    margin-left: calc(-100%);
+    margin-bottom: -100px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--sidebar-color);
+    opacity: 1;
+    z-index: 50;
+}
+
 body.dark .sidebar-main .switch::before {
     left: 25px;
 }
@@ -263,6 +279,15 @@ body.dark .sidebar-main .switch::before {
 
 .sidebar.close .text {
     opacity: 0;
+}
+
+.sidebar.close a:hover .text {
+    padding: 10px;
+    margin-left: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--sidebar-color);
+    opacity: 1;
 }
 
 .sidebar li {
@@ -351,12 +376,7 @@ body.dark .search-box input {
 }
 
 .sidebar li a:hover {
-    background: var(--primary-color);
-}
-
-.sidebar li a:hover .icon,
-.sidebar li a:hover .text {
-    color: var(--sidebar-color);
+    background: var(--selection-color);
 }
 
 body.dark .sidebar li a:hover .icon,
